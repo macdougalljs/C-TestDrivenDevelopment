@@ -8,7 +8,12 @@
 
         internal AddToCartResponse AddToCart(AddToCartRequest request)
         {
-            throw new NotImplementedException();
+            return new AddToCartResponse()
+            {
+                Items = new AddToCartItem[]
+                {
+                    request.Item }
+            };
         }
     }
 }
