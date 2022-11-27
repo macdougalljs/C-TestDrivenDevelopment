@@ -66,6 +66,7 @@ namespace HPlusSportTDD.Core
                 Item = item2
             };
 
+            response = manager.AddToCart(request);
 
             Assert.NotNull(response);
             Assert.Contains(item, response.Items);
